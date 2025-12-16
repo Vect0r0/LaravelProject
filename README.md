@@ -1,3 +1,31 @@
+## Proyecto final PHP usando Laravel
+
+Este proyecto contiene un poco de todo lo realizado durante este curso de PHP usando Laravel, algunas de las cosas que se vieron durante el curso fueron.
+
+* Arquitectura Model-View-Controller
+* Rutas
+* Layouts/Plantillas
+* Acceso y creación de API
+* Migraciones de base de datos
+* ETC
+
+El proyecto se centra principalmente en la parte de inicio de sesión y autenticación.
+
+### Requisitos de uso
+
+Para poder usar este proyecto se necesitará:
+
+* Node/npm instalado
+* Certificado ssl dentro de `PHP/extras/ssl`
+* Cuenta de Google Cloud Services con un nuevo proyecto y con la sección de clientes y autenticación activada, obteniendo de aquí la ID del cliente y su secreto del cliente.
+
+1. Agregar en nuestro archivo `.env` GOOGLE_CLIENT_ID y GOOGLE_CLIENT_SECRET obtenidos previamente de la plataforma.
+2. Modificar `services.php` cambiando la URL de redirección por una creada en la plataforma.
+3. Dirigirnos a `Windows/System32/Drivers/etc` y modificar el archivo `hosts` asegurandonos de agregar unicamente la dirección de localhost seguido del nombre del dominio agregado en nuestra plataforma. Ejemplo: `127.0.0.1 proyectofinalphplaravel.com`.
+4. Usar el comando `php artisan serve host TU_URL --port=800`.
+
+Con estos pasos el proyecto debería funcionar correctamente, o no...
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
